@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Product>
+
+@foreach(var p in Model) {
+    <div>
+        <h3>@p.nameProduct</h3>
+        <span>@p.descriptionProduct</span>
+        <h4>@p.priceProduct.ToString("c")</h4>
+    </div>
+}
